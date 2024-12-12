@@ -6,25 +6,29 @@ This repository contains code for creating a simple Task List application using 
 
 To use the application, you can follow these steps:
 
-1. Base de datos
-   Configurar la base de datos en config/database.js
 
-2. Install the necessary dependencies by running the following command:
-   ```
-   pip install streamlit
-   ```
-
-2. Clone the repository:
+1. Clone the repository:
    ```
    git clone <repository_url>
    ```
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
    ```
    cd task-managment
    ```
 
-4. Run the application using Streamlit:
+3. Add the environment variable `DATABASE_URL`** to the `.env` file. Here is an example of how it should look:
+
+    ```plaintext
+    DATABASE_URL=postgresql://<usuario>:<contraseña>@<host>:<puerto>/<nombre_base_datos>
+    ```
+
+5. Install the necessary dependencies by running the following command:
+   ```
+   pip install -r requirements.txt
+   ```
+
+6. Run the application using Streamlit:
    ```
    streamlit run app.py
    ```
